@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int t;
+    cin>>t;
+    while(t--){
+        long long int a,b;
+        cin>>a>>b;
+        int * arr=new int[a];
+        for(int i=0;i<a;i++){
+            cin>>arr[i];
+        }
+        long long int s=0;
+        for(int i=0;i<a;i++){
+            s=s+arr[i];
+        }
+        cout<<s%b<<endl;
+    }
+}
